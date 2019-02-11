@@ -1,0 +1,25 @@
+body{
+    font-family: sans-serif;
+}
+
+.table{
+    background: linear-gradient(to bottom right, #ffffff 50%, #003300 100%);
+    margin: auto;
+}
+.table .headline h1{
+   margin-top: 15px;
+}
+#js-alert{
+    text-align: center;
+    font-size: 20px;
+    padding: 0px;
+    border: none;
+}
+button{
+    padding: 1px 29px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+input{
+    text-align: center;
+}

@@ -14,6 +14,7 @@ function calculate(age) {
        document.form.output.value = "Retired!";
     } else if(age<18){
         alertField.innerHTML= "You are too young to think of retirement!"
+        document.form.output.value = "";
     }
      else {
         alertField.innerHTML="Keep up the god work! You'll rest later!";

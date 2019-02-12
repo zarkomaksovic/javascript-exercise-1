@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
-    <form name="form">
+  
         <table border="1" width="600" height="200" cellpadding="10" cellspacing="3" class="table">
             <tr class="headline">
                 <th colspan="2">
@@ -16,7 +17,10 @@
             <tr>
                 <td>
                     <h3>Please enter your age</h3>
-                    <input type="number" name="input" id="input" min="18" max="100" /><button onclick="calculate(); return false">OK</button>
+                    <input type="number" name="input" id="input" min="18" max="100" />
+                    <button onclick="calculate(); ">
+                        OK
+                    </button>
 
                 </td>
                 <td>
@@ -29,7 +33,8 @@
                 </td>
             </tr>
         </table>
-    </form>
+  
     <script src="js/custom.js"></script>
 </body>
+
 </html>

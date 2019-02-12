@@ -5,6 +5,7 @@ body{
 .table{
     background: linear-gradient(to bottom right, #ffffff 50%, #003300 100%);
     margin: auto;
+    text-align: center;
 }
 .table .headline h1{
    margin-top: 15px;

@@ -16,27 +16,53 @@
             </tr>
             <tr>
                 <td>
-                    <h3>Please enter your age</h3>
-                    <input type="number" name="input" id="input" min="18" max="100" />
-                    <button onclick="calculate(); ">
-                        OK
-                    </button>
-                    <button value="Refresh Page" onClick="window.location.reload()">
-                        Clear
-                    </button>
+                    <!-- user inputs -->
+                    <h3>Please select your country and enter your age</h3>
+                    <div class="btn-holder">
+                        <form name="form">
+                            <!-- country select -->
+                            <select name="select" onchange="calculate()">
+                                <option value="select">Select country</option>
+                                <option name="country" value=65>Austria</option>
+                                <option name="country" value=62.5>Belarus</option>
+                                <option name="country" value=60>China</option>
+                                <option name="country" value=65>Denmark</option>
+                                <option name="country" value=63>Finland</option>
+                                <option name="country" value=67>Greece</option>
+                                <option name="country" value=50>USA</option>
+                                <option name="country" value=20>Montenegro</option>
+                            </select>
+                        </form>
+
+                        <!-- user age entry -->
+                        <input type="number" name="input" placeholder="Enter your age" id="input" min="18" max="100" />
+                        <!-- confirm -->
+                        <button onclick="calculate(); ">
+                            OK
+                        </button>
+                        <!-- reload-->
+                        <button value="Refresh Page" onClick="window.location.reload()">
+                            Clear
+                        </button>
+                    </div>
                 </td>
                 <td>
+                    <!-- output field -->
                     <h3>Years 'till retirement left</h3>
                     <input type="text" name="output" id="output" readonly>
                 </td>
             </tr>
             <tr>
-                <td id="js-alert" colspan="2">
+                <!-- custom message to user -->
+                <td id="js-alert" class="" colspan="2">
+
                 </td>
             </tr>
         </table>
-
     </div>
+
+
+
     <script src="js/custom.js"></script>
 </body>
 
